@@ -1,0 +1,25 @@
+@import "../../styles/shadows.scss";
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: $cardShadow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .form-item {
+    margin-bottom: 1rem;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .error {
+    color: red;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  min-height: calc(100vh - 210px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts-form {
+  width: 500px;
+
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 500px;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}

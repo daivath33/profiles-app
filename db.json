@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "name": "Daiva",
+      "surname": "Thumat",
+      "date": "1987-11-22",
+      "email": "daiva@gmail.com",
+      "password": "123",
+      "id": "1"
+    },
+    {
+      "name": "Rokas",
+      "surname": "Rokutis",
+      "date": "2023-06-12",
+      "email": "rokas@gmail.com",
+      "password": "123",
+      "id": "2"
+    },
+    {
+      "name": "Lina",
+      "surname": "Linaite",
+      "date": "2023-06-29",
+      "email": "lina@gmail.com",
+      "password": "123",
+      "id": "XvB1eZY"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Reconstruction of the administration building in Vilnius",
+      "description": "Reconstruction work of an administration building located at T. Ševčenkos Street 13, Vilnius, was performed. Main work: dismantling of floors, reinforced concrete structures, masonry walls, and openings. Demolition work of one part of the building, removal of construction scrap, and preparation of the territory for construction work.",
+      "imageUrl": "https://mlg8ncvavrmb.i.optimole.com/4skBQHY-iJvA3T7A/w:2000/h:1500/q:mauto/f:avif/https://bdt.lt/wp-content/uploads/2021/07/8_T.Svecenkos-g.-5.jpg",
+      "client": "Merko statyba, UAB",
+      "startingDate": "2023-06-14T15:33:46Z",
+      "endingDate": "2024-06-14T15:33:46Z",
+      "people": [
+        {
+          "name": "Rokas",
+          "surname": "Broniukas",
+          "position": "Engineer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Vilnius stadium",
+      "description": "Reconstruction work of an administration building located at T. Ševčenkos Street 13, Vilnius, was performed. Main work: dismantling of floors, reinforced concrete structures, masonry walls, and openings. Demolition work of one part of the building, removal of construction scrap, and preparation of the territory for construction work.",
+      "imageUrl": "https://www.lrt.lt/img/2022/08/29/1331261-944016-756x425.jpg",
+      "client": "Merko statyba, UAB",
+      "startingDate": "2023-06-14T15:33:46Z",
+      "endingDate": "2024-06-14T15:33:46Z",
+      "people": [
+        {
+          "name": "Rokas",
+          "surname": "Broniukas",
+          "position": "Engineer"
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "title": "Building new SPA center in Birstonas",
+      "description": "Building work a new SPA building located at Liepu Street 20, Birstonas, was performed.",
+      "imageUrl": "https://media.lrytas.lt/images/2022/05/25/064816207-cb6395cc-5c07-4607-aaa2-ce5373f5c463.jpg",
+      "client": "Testavicius",
+      "startingDate": "2022-12-12",
+      "endingDate": "2023-02-12",
+      "people": [
+        {
+          "name": "Rokas",
+          "surname": "Broniukas",
+          "position": "Engineer"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

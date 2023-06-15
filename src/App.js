@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Routes from "./routes/Routes";
+import Providers from "./context/Providers";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Providers>
+      <Routes />
+    </Providers>
   );
 }
 
 export default App;
+// Pasinagrinėti ir pasiskaityti apie failų struktūras Reacte. Pirmadienį pristatyti alternatyvią versiją.
+//https://www.npmjs.com/package/json-server
+//https://github.com/rokasandreikenas/react-FEUA4/tree/main/12_paskaita
