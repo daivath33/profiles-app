@@ -3,7 +3,7 @@
 .styled-button {
   font-size: 16px;
   padding: 10px 16px;
-  border: 1px solid $primaryMain;
+  border: 2px solid $primaryMain;
   border-radius: 5px;
   background-color: $primaryMain;
   color: #ffffff;
@@ -12,7 +12,14 @@
     cursor: pointer;
     background-color: $primaryDark;
   }
-
+  &.error {
+    background-color: $error;
+    border: 2px solid $error;
+    &:hover {
+      color: $error;
+      background-color: #ffffff;
+    }
+  }
   &.outlined {
     background-color: white;
     color: $primaryMain;
@@ -21,4 +28,12 @@
       background-color: $outlinedButtonBackground;
     }
   }
+  .btn-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.btn-icon {
+  font-size: 18px;
 }

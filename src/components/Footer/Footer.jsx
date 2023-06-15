@@ -3,7 +3,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      <p>2023 All right reserved &copy; Copyright</p>
+      <p>2023 Visos teisės saugomos &copy; Copyright</p>
     </footer>
   );
 };

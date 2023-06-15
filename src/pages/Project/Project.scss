@@ -1,48 +1,92 @@
 @import "./../../styles/colors.scss";
 
-.project-details {
-  margin: 0 auto;
+.project-container {
+  min-height: calc(100vh - 210.67px);
+
+  h2 {
+    color: $primaryDark;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  .project-details {
+    margin-inline: auto;
+    display: flex;
+    max-width: 1170px;
+    gap: 2rem;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .project-img {
+        width: 100%;
+        padding-bottom: 2rem;
+      }
+
+      .descr-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .descr {
+        padding: 0;
+        margin-top: 0.3rem;
+        color: #626060;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 4rem;
+
+      .project-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          padding: 2px 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.project-actions {
   display: flex;
-  max-width: 1170px;
-  min-height: calc(100vh - 210px);
-  justify-content: center;
-  align-items: flex-start;
   gap: 2rem;
 }
-
-.left {
-  flex: 2;
-  img {
-    width: 100%;
-  }
-  .title {
-    padding: 0 1rem;
-    color: $primaryDark;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .description {
-    padding: 0 1rem;
-    color: #626060;
+h4 {
+  color: $neutralgray;
+  font-weight: 400;
+}
+@media only screen and (max-width: 978px) {
+  .project-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-
-.right {
-  flex: 1;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-
-  h3 {
-    margin: 0;
+@media only screen and (max-width: 800px) {
+  h2 {
+    margin-bottom: 0.5rem;
   }
-  p {
-    padding: 2px 0;
-    margin: 0;
-  }
-}
 
-.big-card {
-  width: 30rem;
+  .project-details {
+    flex-direction: column;
+
+    .left {
+      margin: 0;
+    }
+  }
 }

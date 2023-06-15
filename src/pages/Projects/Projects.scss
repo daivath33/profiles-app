@@ -1,26 +1,32 @@
-$shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+@import "../../styles/shadows.scss";
 
-.projects {
-  min-height: calc(100vh - 210px);
+.projects-container {
+  min-height: calc(100vh - 210.67px);
+  padding-top: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 4rem;
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 
-  .single-project {
-    width: 24%;
-  }
-  a {
-    text-decoration: none;
+    .single-project {
+      width: 24%;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }
 
 .project-card {
   width: 400px;
-  min-height: 400px;
-  box-shadow: $shadow;
+  height: auto;
+  box-shadow: $cardShadow;
   display: flex;
   flex-direction: column;
   border-radius: 0.3rem;
@@ -48,7 +54,7 @@ $shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     padding: 0 1rem;
   }
 }
-.new-project {
+.add-new-project {
   margin: 1rem 0 2rem;
   text-align: center;
   text-transform: uppercase;

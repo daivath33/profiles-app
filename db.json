@@ -27,38 +27,15 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "Reconstruction of the administration building in Vilnius",
-      "description": "Reconstruction work of an administration building located at T. Ševčenkos Street 13, Vilnius, was performed. Main work: dismantling of floors, reinforced concrete structures, masonry walls, and openings. Demolition work of one part of the building, removal of construction scrap, and preparation of the territory for construction work.",
-      "imageUrl": "https://mlg8ncvavrmb.i.optimole.com/4skBQHY-iJvA3T7A/w:2000/h:1500/q:mauto/f:avif/https://bdt.lt/wp-content/uploads/2021/07/8_T.Svecenkos-g.-5.jpg",
-      "client": "Merko statyba, UAB",
-      "startingDate": "2023-06-14T15:33:46Z",
-      "endingDate": "2024-06-14T15:33:46Z",
-      "people": [
-        {
-          "name": "Rokas",
-          "surname": "Broniukas",
-          "position": "Engineer"
-        }
-      ]
-    },
-    {
       "id": 2,
-      "userId": 1,
+      "userId": "1",
       "title": "Vilnius stadium",
       "description": "Reconstruction work of an administration building located at T. Ševčenkos Street 13, Vilnius, was performed. Main work: dismantling of floors, reinforced concrete structures, masonry walls, and openings. Demolition work of one part of the building, removal of construction scrap, and preparation of the territory for construction work.",
       "imageUrl": "https://www.lrt.lt/img/2022/08/29/1331261-944016-756x425.jpg",
       "client": "Merko statyba, UAB",
-      "startingDate": "2023-06-14T15:33:46Z",
-      "endingDate": "2024-06-14T15:33:46Z",
-      "people": [
-        {
-          "name": "Rokas",
-          "surname": "Broniukas",
-          "position": "Engineer"
-        }
-      ]
+      "startingDate": "2023-06-14",
+      "endingDate": "2024-06-14",
+      "people": []
     },
     {
       "userId": 1,

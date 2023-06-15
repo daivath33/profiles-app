@@ -1,18 +1,36 @@
 @import "../../styles/shadows.scss";
+@import "./../../styles/colors.scss";
 
-.project-form {
-  width: 500px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: $cardShadow;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.new-project-container {
+  min-height: calc(100vh - 210.67px);
 
-  .btn-create {
-    align-self: center;
-    margin-top: 10px;
+  h2 {
+    margin: 0 0 1rem;
+    color: $primaryDark;
+    text-align: center;
+  }
+
+  .project-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: $cardShadow;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+
+    .btn-create {
+      margin-top: 0.3rem;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project-form {
+    width: 400px;
   }
 }

@@ -8,6 +8,7 @@ import Profile from "../pages/Profile/Profile";
 import Projects from "../pages/Projects/Projects";
 import NewProject from "../pages/NewProject/NewProject";
 import Project from "../pages/Project/Project";
+import EditProject from "../pages/EditProject/EditProject";
 
 export const REGISTER_ROUTE = "/register";
 export const LOGIN_ROUTE = "/";
@@ -17,6 +18,7 @@ export const PROFILE_ROUTE = "/profile";
 export const PROJECTS_ROUTE = "/projects";
 export const NEW_PROJECT_ROUTE = `${PROJECTS_ROUTE}/new`;
 export const PROJECT_ROUTE = `${PROJECTS_ROUTE}/:id`;
+export const EDIT_PROJECT_ROUTE = `${PROJECT_ROUTE}/edit`;
 
 //kol nesu prisijunges
 export const loginRoutes = {
@@ -61,12 +63,15 @@ export const authenticatedRoutes = {
       path: PROJECT_ROUTE,
       Component: Project,
     },
+    {
+      path: EDIT_PROJECT_ROUTE,
+      Component: EditProject,
+    },
   ],
 };
 
-
 export const topbarNavigationItems = [
-  { route: MAIN_ROUTE, title: "Home" },
-  { route: PROJECTS_ROUTE, title: "Projects" },
-  { route: CONTACTS_ROUTE, title: "Contacts" },
+  { route: MAIN_ROUTE, title: "Pagrindinis Puslapis" },
+  { route: PROJECTS_ROUTE, title: "Projektai" },
+  { route: CONTACTS_ROUTE, title: "Kontaktai" },
 ];

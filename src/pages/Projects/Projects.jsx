@@ -38,15 +38,12 @@ const Projects = () => {
   }
 
   return (
-    <>
-      <div className="new-project">
-        <Button onClick={handleCreateNewProject}>
-          <div className="text">
-            <p>Pridėti naują projektą</p>{" "}
-            <MdAddCircleOutline className="btn-icon" />
-          </div>
-        </Button>
-      </div>
+    <div className="projects-container">
+      <Button onClick={handleCreateNewProject}>
+        Pridėti naują projektą
+        <MdAddCircleOutline className="btn-icon" />
+      </Button>
+
       <div className="projects">
         {projects.map((project) => (
           <Link
@@ -62,7 +59,7 @@ const Projects = () => {
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

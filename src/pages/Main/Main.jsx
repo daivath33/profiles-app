@@ -21,9 +21,7 @@ const Main = () => {
           pariatur quasi quas exercitationem.{" "}
         </p>
         <Button variant="main-btn" onClick={handleProjectsRewiev}>
-          <div className="btn-text">
-            Peržiūrėti Projektus <BsArrowRightCircle className="btn-icon" />
-          </div>
+          Peržiūrėti Projektus <BsArrowRightCircle className="btn-icon" />
         </Button>
       </div>
       <div className="right">

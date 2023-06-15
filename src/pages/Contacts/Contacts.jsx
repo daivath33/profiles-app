@@ -1,54 +1,47 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import FormItem from "../../components/FormItem/FormItem";
-import Button from "../../components/Button/Button";
-import { MAIN_ROUTE } from "../../routes/const";
+import Carte from "../../assets/carte.png";
+import { BiCalendar, BiEnvelope, BiPhone, BiMap } from "react-icons/bi";
 import "./Contacts.scss";
 
 const Contacts = () => {
-  const [email, setEmail] = useState("");
-  const [customerName, setCustomerName] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const messageData = { email, customerName, message };
-  };
-
   return (
-    <div className="container">
+    <div className="contacts-container">
       <h2>Mūsų Kontaktai</h2>
-      <form className="contacts-form" onSubmit={handleSubmit}>
-        <FormItem
-          label="Email"
-          containerClassname="form-item"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <FormItem
-          label="Name"
-          containerClassname="form-item"
-          type="text"
-          value={customerName}
-          onChange={(e) => setCustomerName(e.target.value)}
-          required
-        />
-        <FormItem
-          label="Message"
-          containerClassname="form-item"
-          type="text"
-          value={customerName}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-        {error && <p className="error">{error}</p>}
-        <div className="button-container">
-          <Button>Siųsti Pranešimą</Button>
+      <div className="contacts">
+        <div className="left">
+          <div className="contacts-info">
+            <h3>
+              {" "}
+              <BiMap /> Adresas
+            </h3>
+            <p>Gedimino pr. 120, LT-00125 Vilnius</p>
+          </div>
+          <div className="contacts-info">
+            <h3>
+              {" "}
+              <BiPhone /> Mobilus telefonas
+            </h3>
+            <p>+370 671 33876</p>
+          </div>
+          <div className="contacts-info">
+            <h3>
+              {" "}
+              <BiEnvelope /> Elektroninis paštas
+            </h3>
+            <p>daiva@gmail.com</p>
+          </div>
+          <div className="contacts-info">
+            <h3>
+              <BiCalendar /> Darbo valandos
+            </h3>
+            <p>Pirmadienis - Penktadienis: 8:00 - 17:00</p>
+            <p>Šeštadienis: 10:00 - 14:00</p>
+            <p>Sekmadienis: nedirbame</p>
+          </div>
         </div>
-      </form>
+        <div className="right">
+          <img src={Carte} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

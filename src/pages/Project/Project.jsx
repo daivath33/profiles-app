@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import { getProject } from "../../api/projects";
-import ProjectCard from "../../pages/Projects/ProjectCard";
 import "./Project.scss";
+import ProjectActions from "./ProjectActions";
+import ProjectPeopleInfo from "./ProjectPeopleInfo";
 
 const Project = () => {
   const { id } = useParams();
@@ -26,30 +27,42 @@ const Project = () => {
     return <Loader />;
   }
   if (!project) {
-    return <div>Project not found!</div>;
+    return <div>Projektas nerastas!</div>;
   }
 
   return (
-    <div className="project-details">
-      <div className="left">
-        <img src={project.imageUrl} alt="project-image" />
-        <p className="title">{project.title}</p>
-        <p className="description">{project.description}</p>
-      </div>
-      <div className="right">
-        <div>
-          <h3>Uzsakovas:</h3>
-          <p>{project.client}</p>
+    <>
+      <div className="project-container">
+        <h2>Projektas "{project.title}"</h2>
+        <div className="project-details">
+          <div className="left">
+            <img src={project.imageUrl} alt="" className="project-img" />
+            <p className="descr-title">Apie Projektą:</p>
+            <p className="descr">{project.description}</p>
+          </div>
+          <div className="right">
+            <div className="project-info">
+              <div>
+                <h3>Užsakovas:</h3>
+                <p>{project.client}</p>
+              </div>
+              <ProjectPeopleInfo people={project.people} />
+              <div>
+                <h3>Projekto pradžia:</h3>
+                <p>{project.startingDate}</p>
+              </div>
+              <div>
+                <h3>Projekto pabaiga:</h3>
+                <p>{project.endingDate}</p>
+              </div>
+            </div>
+            <div className="actions-box">
+              <ProjectActions id={project.id} />
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>Projekto vykdytojai:</h3>
-          <p>
-            {project.people[0].name} {project.people[0].surname}, position:{" "}
-            {project.people[0].position}
-          </p>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 

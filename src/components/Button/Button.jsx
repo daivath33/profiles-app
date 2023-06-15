@@ -4,7 +4,7 @@ import "./Button.scss";
 const Button = ({ className, children, variant, ...props }) => {
   return (
     <button className={`styled-button ${variant} ${className}`} {...props}>
-      {children}
+      <div className="btn-text">{children}</div>
     </button>
   );
 };
