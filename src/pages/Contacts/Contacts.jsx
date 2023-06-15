@@ -18,6 +18,7 @@ const Contacts = () => {
 
   return (
     <div className="container">
+      <h2>Mūsų Kontaktai</h2>
       <form className="contacts-form" onSubmit={handleSubmit}>
         <FormItem
           label="Email"
@@ -45,7 +46,7 @@ const Contacts = () => {
         />
         {error && <p className="error">{error}</p>}
         <div className="button-container">
-          <Button>Send Message</Button>
+          <Button>Siųsti Pranešimą</Button>
         </div>
       </form>
     </div>

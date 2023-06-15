@@ -8,6 +8,7 @@ import {
 } from "../../routes/const";
 import { showUserFullName } from "../../utils/user";
 import { AiOutlineUser } from "react-icons/ai";
+import { BsFillBuildingsFill } from "react-icons/bs";
 import "./Topbar.scss";
 
 const Topbar = () => {
@@ -18,7 +19,7 @@ const Topbar = () => {
     <div className="nav-box">
       <nav className="navigation">
         <Link to={MAIN_ROUTE} className="logo">
-          LOGO
+          <BsFillBuildingsFill className="topbar-icon-bg" />
         </Link>
         <div className="navigation-items">
           {topbarNavigationItems.map((navItem) => (

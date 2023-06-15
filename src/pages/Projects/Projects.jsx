@@ -42,7 +42,7 @@ const Projects = () => {
       <div className="new-project">
         <Button onClick={handleCreateNewProject}>
           <div className="text">
-            <p>Prideti nauja projekta</p>{" "}
+            <p>Pridėti naują projektą</p>{" "}
             <MdAddCircleOutline className="btn-icon" />
           </div>
         </Button>

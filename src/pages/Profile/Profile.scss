@@ -1,4 +1,5 @@
 @import "../../styles/shadows.scss";
+@import "./../../styles/colors.scss";
 
 .container {
   min-height: calc(100vh - 210px);
@@ -6,6 +7,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  h2 {
+    text-align: center;
+    color: $primaryDark;
+  }
 }
 .profile-form {
   width: 500px;

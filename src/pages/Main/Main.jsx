@@ -13,8 +13,8 @@ const Main = () => {
   return (
     <div className="main-container">
       <div className="left">
-        <h1>Statybos Projektu Valdymas</h1>
-        <h1>Projektu Prieziur</h1>
+        <h1>Statybos Projektų Valdymas</h1>
+        <h1>Projektų Priežiūra</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
           dignissimos, eos distinctio facilis consectetur quos obcaecati
@@ -22,7 +22,7 @@ const Main = () => {
         </p>
         <Button variant="main-btn" onClick={handleProjectsRewiev}>
           <div className="btn-text">
-            Perziureti Projektus <BsArrowRightCircle className="btn-icon" />
+            Peržiūrėti Projektus <BsArrowRightCircle className="btn-icon" />
           </div>
         </Button>
       </div>

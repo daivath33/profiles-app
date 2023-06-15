@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { UserContext } from "../../context/UserContext";
 import FormItem from "../../components/FormItem/FormItem";
 import Button from "../../components/Button/Button";
+import { showUserFullName } from "../../utils/user";
 import "./Profile.scss";
 
 const Profile = () => {
@@ -20,6 +21,7 @@ const Profile = () => {
 
   return (
     <div className="container">
+      <h2>{showUserFullName(user)} Profilis (duomenys)</h2>
       <form className="profile-form" onSubmit={handleSubmit}>
         <FormItem
           label="Name"

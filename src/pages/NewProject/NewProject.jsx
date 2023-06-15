@@ -42,51 +42,53 @@ const NewProject = () => {
   };
 
   return (
-    <form className="project-form" onSubmit={handleSubmit}>
-      <FormItem
-        type="text"
-        label="Projekto Pavadinimas"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <FormItem
-        type="text"
-        label="Projekto aprasymas"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
-      <FormItem
-        type="url"
-        label="Nuotraukos ULR"
-        value={imageUrl}
-        onChange={(e) => setImageUrl(e.target.value)}
-      />
-      <FormItem
-        label="Kliento pavadinimas"
-        value={client}
-        onChange={(e) => setClient(e.target.value)}
-      />
-      {/* <FormItem
-        type="text"
-        label="Darbu vykdytojo vardas"
-        value={name}
-        onChange={(e) => setTitle(e.target.value)}
-      /> */}
-      <FormItem
-        type="date"
-        label="Starting Date"
-        value={startingDate}
-        onChange={(e) => setStartingDate(e.target.value)}
-      />
-      <FormItem
-        type="date"
-        label="Ending Date"
-        value={endingDate}
-        onChange={(e) => setEndingDate(e.target.value)}
-      />
-
-      <Button className="btn-create">Create Project</Button>
-    </form>
+    <div className="container">
+      <h2>Naujas Projektas</h2>
+      <form className="project-form" onSubmit={handleSubmit}>
+        <FormItem
+          type="text"
+          label="Projekto Pavadinimas"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <FormItem
+          type="text"
+          label="Projekto aprasymas"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <FormItem
+          type="url"
+          label="Nuotraukos ULR"
+          value={imageUrl}
+          onChange={(e) => setImageUrl(e.target.value)}
+        />
+        <FormItem
+          label="Kliento pavadinimas"
+          value={client}
+          onChange={(e) => setClient(e.target.value)}
+        />
+        {/* <FormItem
+          type="text"
+          label="Darbu vykdytojo vardas"
+          value={name}
+          onChange={(e) => setTitle(e.target.value)}
+        /> */}
+        <FormItem
+          type="date"
+          label="Starting Date"
+          value={startingDate}
+          onChange={(e) => setStartingDate(e.target.value)}
+        />
+        <FormItem
+          type="date"
+          label="Ending Date"
+          value={endingDate}
+          onChange={(e) => setEndingDate(e.target.value)}
+        />
+        <Button className="btn-create">Sukurti Projektą</Button>
+      </form>
+    </div>
   );
 };
 

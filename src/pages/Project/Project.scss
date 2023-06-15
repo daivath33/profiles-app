@@ -1,3 +1,5 @@
+@import "./../../styles/colors.scss";
+
 .project-details {
   margin: 0 auto;
   display: flex;
@@ -15,9 +17,9 @@
   }
   .title {
     padding: 0 1rem;
-    color: darkblue;
-    font-size: 20px;
-    font-weight: 600;
+    color: $primaryDark;
+    font-size: 24px;
+    font-weight: 700;
   }
   .description {
     padding: 0 1rem;
